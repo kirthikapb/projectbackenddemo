@@ -12,4 +12,4 @@ app.use(cors());
 app.use(express.json())
 mongo.connect()
 app.use('/register',signRouter)
-app.listen(3012)
+app.listen(Process.env.PORT||3012)
